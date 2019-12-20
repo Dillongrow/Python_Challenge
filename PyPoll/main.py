@@ -25,12 +25,14 @@ with open(election_csv, 'r') as csvfile:
           canidates[canidate] = 1   
         
 print("Total Votes: " + str(total_votes))
-print("-----------------")
+print("---------------------------")
 
 
 for canidate, num in canidates.items():
-    percent=int(num)/total_votes*100
+    percent=round(int(num)/total_votes*100,2)
     print(canidate + ": " + str(percent) + "% " + "("+ str(num) + ")")
-
-print("------------------")
-#print("Winner:" + winner)
+    
+print("---------------------------")
+#print("Winner: " + str(winner))
+print("---------------------------")
+print()

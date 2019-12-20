@@ -25,16 +25,18 @@ with open(budget_csv, 'r') as csvfile:
         total_months=total_months+1
         total_sum=total_sum + int(row[1])
         
+    
         change=int(row[1])-previous
-        previous=int(row[1])
         total_change=total_change+change
+        previous=int(row[1])
+        
 
         if change > greatest_inc:
             greatest_inc=change
         if change < greatest_dec:
             greatest_dec=change
 
-    avg_change=total_change/total_months     
+    avg_change=round(total_change/total_months,2)     
 
 print("Total Months: " + str(total_months))
 print("Total: $" +str(total_sum))
