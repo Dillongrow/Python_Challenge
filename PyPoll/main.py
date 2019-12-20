@@ -8,6 +8,7 @@ print("Election Results")
 print("----------------------")
 
 canidates={}
+total_votes=0
 
 with open(election_csv, 'r') as csvfile:
     csvreader=csv.reader(csvfile, delimiter=',')
@@ -15,14 +16,21 @@ with open(election_csv, 'r') as csvfile:
 
     for row in csvreader:
 
-      canidate = row[2]
+        total_votes=total_votes+1
+        canidate = row[2]
 
-      if canidate in canidates:
-        canidates[canidate] = canidates[canidate] + 1
-      else:
-        canidates[canidate] = 1 
+        if canidate in canidates:
+          canidates[canidate] = canidates[canidate] + 1
+        else:
+          canidates[canidate] = 1   
         
-print("Total Votes:")
+print("Total Votes: " + str(total_votes))
 print("-----------------")
+
+
 for canidate, num in canidates.items():
-    print(canidate + ": " + str(num))
+    percent=int(num)/total_votes*100
+    print(canidate + ": " + str(percent) + "% " + "("+ str(num) + ")")
+
+print("------------------")
+#print("Winner:" + winner)

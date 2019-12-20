@@ -39,6 +39,6 @@ with open(budget_csv, 'r') as csvfile:
 print("Total Months: " + str(total_months))
 print("Total: $" +str(total_sum))
 print("Average Change: $" + str(avg_change))
-print("Greatest Increase in Profits: " +  " $" +str(greatest_inc))
-print("Greatest Decrease in Profits: $" +str(greatest_dec))
+print("Greatest Increase in Profits: " +  " $" + str(greatest_inc))
+print("Greatest Decrease in Profits: " + " $" + str(greatest_dec))
 print()
