@@ -44,3 +44,7 @@ print("Average Change: $" + str(avg_change))
 print("Greatest Increase in Profits: " +  " $" + str(greatest_inc))
 print("Greatest Decrease in Profits: " + " $" + str(greatest_dec))
 print()
+
+data_output = os.path.join("PyBank", "PyBank.csv")
+with open(data_output, "w", newline="") as datafile:
+    writer = csv.writer(datafile)

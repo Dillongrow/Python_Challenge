@@ -36,3 +36,7 @@ print("---------------------------")
 #print("Winner: " + str(winner))
 print("---------------------------")
 print()
+
+data_output = os.path.join("PyPoll", "PyPoll.csv")
+with open(data_output, "w", newline="") as datafile:
+    writer = csv.writer(datafile)
