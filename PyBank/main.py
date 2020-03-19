@@ -36,7 +36,7 @@ with open(budget_csv, 'r') as csvfile:
         if change < greatest_dec:
             greatest_dec=change
 
-    avg_change=round(total_change/total_months,2)     
+avg_change=round(total_sum/total_months,2)  
 
 print("Total Months: " + str(total_months))
 print("Total: $" +str(total_sum))
