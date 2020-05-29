@@ -37,5 +37,3 @@ Two sets of poll data (election_data_1.csv and election_data_2.csv). Each datase
   -------------------------
   ```
 
-
->>>>>>> 661199406c087435eed5e815fe01fca70b13405b
