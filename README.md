@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python Homework - Py Me Up, Charlie
 
 ## Background
@@ -92,3 +93,18 @@ Both of these challenges encompasses a real-world situation where your newfound 
 ## Copyright
 
 Trilogy Education Services © 2019. All Rights Reserved.
+=======
+1. PyBank Code
+
+A Python script for analyzing the financial records revenue data examples (budget_data_1.csv and budget_data_2.csv).
+
+Each dataset is composed of two columns: Date and Revenue.
+
+
+
+2. PyPoll Code
+
+A Python script that analyzes the votes and calculates each of the following example of election Data, a rural town modernizing its vote-counting process.
+
+Two sets of poll data (election_data_1.csv and election_data_2.csv). Each dataset is composed of three columns: Voter ID, County, and Candidate.
+>>>>>>> 661199406c087435eed5e815fe01fca70b13405b
